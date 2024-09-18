@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four-Column TV Guide</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .column {
+            flex: 1;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe class="column" src="https://www.mytvsuper.com/tc/epg/81/翡翠台/" title="翡翠台"></iframe>
+        <iframe class="column" src="https://viu.tv/epg/99" title="ViuTV"></iframe>
+        <iframe class="column" src="https://hoy.tv/program_guide" title="HOY TV"></iframe>
+        <iframe class="column" src="http://jaffeling.com/hktv/schedule/624" title="RTHK"></iframe>
+    </div>
+</body>
+</html>
